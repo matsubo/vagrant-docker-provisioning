@@ -16,7 +16,7 @@ Initial setup
 Download coreos image.
 
 ```
-vagrant box add http://stable.release.core-os.net/amd64-usr/current/coreos_production_vagrant_vmware_fusion.json
+% vagrant box add http://stable.release.core-os.net/amd64-usr/current/coreos_production_vagrant_vmware_fusion.json
 ```
 
 Hit `vagrant box update` to update the core os image.
@@ -29,7 +29,7 @@ Start
 - The VM will ready for 30 seconds after the second time.
 
 ```
-vagrant up
+% vagrant up
 ```
 
 
@@ -37,9 +37,8 @@ Halt
 ---
 
 
-
 ```
-vagrant halt
+% vagrant halt
 ```
 
 
