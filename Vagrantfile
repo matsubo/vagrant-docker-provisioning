@@ -33,8 +33,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     d.build_image "/docker/postfix",   args: '-t postfix'
   end
 
-  config.vm.provision "shell", inline: "docker stop $(docker ps -a -q); docker rm $(docker ps -a -q)"
-
 
   config.vm.provision "docker-run", type: "docker", run: "always" do |d|
     d.run "mysql", args: "-p 3306:3306 --name mysql -e DB_NAME=dpa_development -e DB_USER=docker -e DB_PASS=docker"
